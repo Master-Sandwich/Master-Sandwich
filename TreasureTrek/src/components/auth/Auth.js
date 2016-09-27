@@ -4,7 +4,6 @@ import {Text, View, TextInput, AsyncStorage, TouchableHighlight, AlertIOS} from 
 import t from 'tcomb-form-native';
 
 // App components
-import Main from '../main/Main.js'
 
 // Create Session Storage Key for AsyncStorage
 var STORAGE_KEY = 'id_token';

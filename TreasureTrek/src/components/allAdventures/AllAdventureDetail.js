@@ -20,7 +20,7 @@ const AdvenCard = (props) => {
   }
 
   return (
-      <View style={{ margin: 70 }}>
+      <View>
         <Text>{props.adven.details.OpeningRiddle}</Text>
         <Text>{props.adven.details.location}</Text>
         <TouchableHighlight style={style.button} onPress={toAcceptView}>

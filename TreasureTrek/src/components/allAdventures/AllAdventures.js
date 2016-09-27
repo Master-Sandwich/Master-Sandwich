@@ -7,33 +7,31 @@ import {
   View
 } from 'react-native'
 
-import AllAdventuresList from './AllAdventuresList'
+import AllAdventuresLayout from './AllAdventuresLayout'
+
+var layoutRoute = {
+  title: "Welcome to All Adventures",
+  component: AllAdventuresLayout
+}
 
 // Navigator wrapper
 // Root component for section
 export default class AllAdventures extends Component {
-  constructur(props){
+  constructor(props){
     super(props)
 
+  }
+
+  componentDidMount(){
+    console.log("component did mount")
   }
 
   render(){
     return (
       <NavigatorIOS
-        initialRoute={}
-        style={{ flex : 1 }}
+      initialRoute={layoutRoute}
+      style={{ flex: 1 }}
       />
     )
   }
-}
-
-
-const AllAdventuresLayout = (props) => {
-
-  return (
-    <View>
-      // Header?
-      <AllAdventuresList nav={props.navigator}/>
-    </View>
-  )
 }

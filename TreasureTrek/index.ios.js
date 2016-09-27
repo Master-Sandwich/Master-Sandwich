@@ -12,11 +12,6 @@ import {
 } from 'react-native';
 
 // App components
-<<<<<<< c97be5f1e4249b9169dd4a90a912ae9ffd34b227
-=======
-import Auth from './src/components/auth/Auth'
-import AllAdventures from './src/components/allAdventures/AllAdventures'
->>>>>>> (clean up) layout
 
 // Test Routes
 import MyAdventures from './src/components/MyAdventures/myAdventuresContainer';
@@ -28,16 +23,10 @@ class TreasureTrek extends Component {
       component: MyAdventures
     }
     return (
-<<<<<<< c97be5f1e4249b9169dd4a90a912ae9ffd34b227
       <NavigatorIOS
         initialRoute ={ authRoute }
         style={{ flex: 1 }}
       />
-=======
-      <View>
-        <AllAdventuresLayout/>
-      </View>
->>>>>>> (clean up) layout
     );
   }
 }

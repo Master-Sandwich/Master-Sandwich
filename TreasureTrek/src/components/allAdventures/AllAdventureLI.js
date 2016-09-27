@@ -2,7 +2,7 @@ import React from 'react';
 import {Text, View, TouchableHighlight} from 'react-native';
 
 // App components
-import AdvenCard from './AdvenCard'
+import AdvenCard from './AllAdventureDetail'
 
 
 const AdvenLI = (props) => {
@@ -22,18 +22,18 @@ const AdvenLI = (props) => {
     console.log('PROPS: ', props)
   }
 
-  // Optional button depending on how we structure list item
-  // <Text onPress={toAdvenCard}>View Card</Text>
+  console.log(props.adven.name)
+  // <TouchableHighlight
+  // onPress={toAdvenCard}
+  // underlayColor={'#00ffff'}>
   return (
-      <TouchableHighlight
-        onPress={toAdvenCard}
-        underlayColor={'#00ffff'}>
         <View>
           <Text>{props.adven.name}</Text>
+          <Text>Hi there</Text>
           <Text style={{ fontSize: 9 }}>{props.adven.details.location}</Text>
         </View>
-      </TouchableHighlight>
     );
 };
 
+// </TouchableHighlight>
 export default AdvenLI
