@@ -9,11 +9,6 @@ import {
 
 import AllAdventuresLayout from './AllAdventuresLayout'
 
-var layoutRoute = {
-  title: "Welcome to All Adventures",
-  component: AllAdventuresLayout
-}
-
 // Navigator wrapper
 // Root component for section
 export default class AllAdventures extends Component {
@@ -27,6 +22,10 @@ export default class AllAdventures extends Component {
   }
 
   render(){
+    var layoutRoute = {
+      title: "Welcome to All Adventures",
+      component: AllAdventuresLayout
+    }
     return (
       <NavigatorIOS
       initialRoute={layoutRoute}
