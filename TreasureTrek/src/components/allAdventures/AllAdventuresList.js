@@ -9,34 +9,33 @@ import {
 // App components
 import AdvenLI from './AdvenLI'
 
-var dummy = [
-  {
-    adven_id: "1",
-    name: "Where'd sparkles go?",
-    details: {
-      location: "New York, CA",
-      OpeningRiddle: "Whatever the opening riddle is"
-    }
-  },
-  {
-    adven_id: "2",
-    name: "Buried Treasure",
-    details: {
-      location: "Seattle, WA",
-      OpeningRiddle: "Whatever the opening riddle is"
-    }
-  },
-  {
-    adven_id: "3",
-    name: "Catch me if you can!",
-    details: {
-      location: "Austin, TX",
-      OpeningRiddle: "Whatever the opening riddle is"
-    }
-  }
-];
-
-var _dummy = ['one', 'two', 'three', 'four']
+// Dummy Data
+// var dummy = [
+//   {
+//     adven_id: "1",
+//     name: "Where'd sparkles go?",
+//     details: {
+//       location: "New York, CA",
+//       OpeningRiddle: "Whatever the opening riddle is"
+//     }
+//   },
+//   {
+//     adven_id: "2",
+//     name: "Buried Treasure",
+//     details: {
+//       location: "Seattle, WA",
+//       OpeningRiddle: "Whatever the opening riddle is"
+//     }
+//   },
+//   {
+//     adven_id: "3",
+//     name: "Catch me if you can!",
+//     details: {
+//       location: "Austin, TX",
+//       OpeningRiddle: "Whatever the opening riddle is"
+//     }
+//   }
+// ];
 
 export default class AllAdvens extends Component {
   constructor(props){
