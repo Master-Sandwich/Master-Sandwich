@@ -1,3 +1,9 @@
+/*
+  Experimental attempt to move NavigatorIOS away from index.ios.js
+  Currently doesn't work. Not being used.
+*/
+
+
 import React, { Component } from 'react';
 import {
   NavigatorIOS,
@@ -27,6 +33,7 @@ export default class AllAdventures extends Component {
       component: AllAdventuresLayout
     }
     return (
+
       <NavigatorIOS
       initialRoute={layoutRoute}
       style={{ flex: 1 }}

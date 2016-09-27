@@ -2,38 +2,48 @@ import React from 'react';
 import {Text, View, TouchableHighlight} from 'react-native';
 
 // App components
-import AdvenCard from './AllAdventureDetail'
+import AllAdventureDetail from './AllAdventureDetail'
 
 
-const AdvenLI = (props) => {
+const AllAdventureLI = (props) => {
 
-  const advenCardRoute = {
+  const adventureDetailRoute = {
     title: props.adven.name + " Card",
-    component: AdvenCard,
+    component: AllAdventureDetail,
     passProps: {
       nav: props.nav,
       adven: props.adven
     }
   }
 
+<<<<<<< ee6bc5bcfab4115dc10c4abcf58c8878164ffb07
   var toAdvenCard = function (){
     props.nav.push(advenCardRoute);
     console.log('PROPS.nav: ', props.nav);
     console.log('PROPS: ', props)
+=======
+  var toAllAdventureDetail = function (){
+    props.nav.push(adventureDetailRoute)
+>>>>>>> (clean up) returned to old routing
   }
 
   console.log(props.adven.name)
-  // <TouchableHighlight
-  // onPress={toAdvenCard}
-  // underlayColor={'#00ffff'}>
   return (
-        <View>
-          <Text>{props.adven.name}</Text>
-          <Text>Hi there</Text>
-          <Text style={{ fontSize: 9 }}>{props.adven.details.location}</Text>
-        </View>
+    <TouchableHighlight
+    onPress={toAllAdventureDetail}
+    underlayColor={'#00ffff'}>
+      <View style={style}>
+        <Text>{props.adven.name}</Text>
+        <Text style={{ fontSize: 9 }}>{props.adven.details.location}</Text>
+      </View>
+    </TouchableHighlight>
     );
 };
 
-// </TouchableHighlight>
-export default AdvenLI
+var style = {
+    marginLeft: 5,
+    marginRight: 5,
+    marginTop: 30
+}
+
+export default AllAdventureLI

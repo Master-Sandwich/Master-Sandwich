@@ -7,7 +7,7 @@ import {
 } from 'react-native'
 
 // App components
-import AdvenLI from './AllAdventureLI'
+import AllAdventureLI from './AllAdventureLI'
 
 // Dummy Data
 var dummy = [
@@ -37,7 +37,7 @@ var dummy = [
   }
 ];
 
-export default class AllAdvens extends Component {
+export default class AllAdventuresList extends Component {
   constructor(props){
     super(props)
     this.renderRowCB = this.renderRowCB.bind(this)
@@ -49,19 +49,24 @@ export default class AllAdvens extends Component {
 
 
   renderRowCB(adven){
+<<<<<<< ee6bc5bcfab4115dc10c4abcf58c8878164ffb07
 <<<<<<< e52524068bda7c6abab0a6a51884bf290d05cc85
     console.log('Props.navigator: ', this.props.navigator)
     return <AdvenLI nav={this.props.navigator} adven={adven}/>
 =======
     return <AdvenLI nav={this.props.nav} adven={adven}/>
 >>>>>>> (test)
+=======
+    console.log(this.props)
+    return <AllAdventureLI nav={this.props.nav} adven={adven}/>
+>>>>>>> (clean up) returned to old routing
   }
 
   render() {
     return (
       <View>
         <ListView
-          style={{margin: 70}}
+          style={{ margin: 70 }}
           automaticallyAdjustContentInsets={false}
           property={"from list view"}
           dataSource={this.state.data}

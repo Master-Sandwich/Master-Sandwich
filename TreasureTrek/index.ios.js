@@ -7,6 +7,7 @@
 import React, { Component } from 'react'
 import {
   AppRegistry,
+  NavigatorIOS,
   Text,
   View
 } from 'react-native';
