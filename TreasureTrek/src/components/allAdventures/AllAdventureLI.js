@@ -26,8 +26,8 @@ const AdvenLI = (props) => {
   // <Text onPress={toAdvenCard}>View Card</Text>
   return (
       <TouchableHighlight
-      onPress={toAdvenCard}
-      underlayColor={'#00ffff'}>
+        onPress={toAdvenCard}
+        underlayColor={'#00ffff'}>
         <View>
           <Text>{props.adven.name}</Text>
           <Text style={{ fontSize: 9 }}>{props.adven.details.location}</Text>

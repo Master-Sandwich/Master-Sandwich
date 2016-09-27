@@ -20,8 +20,8 @@ export default class AllAdventures extends Component {
   render(){
     return (
       <NavigatorIOS
-      initialRoute={}
-      style={{ flex : 1 }}
+        initialRoute={}
+        style={{ flex : 1 }}
       />
     )
   }
