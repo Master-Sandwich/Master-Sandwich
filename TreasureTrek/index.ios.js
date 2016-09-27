@@ -7,20 +7,14 @@
 import React, { Component } from 'react'
 import {
   AppRegistry,
-  StyleSheet,
-  NavigatorIOS,
   Text,
   View
 } from 'react-native';
 
 // App components
-import Header from './src/components/auth/Header';
-import Auth from './src/components/auth/Auth';
 
 // Test Routes
-import AllAdvens from './src/components/allAdvens/AllAdvens';
 import MyAdventures from './src/components/MyAdventures/myAdventuresContainer';
-
 
 class TreasureTrek extends Component {
   render() {
@@ -29,14 +23,10 @@ class TreasureTrek extends Component {
       component: MyAdventures
     }
     return (
-      // <View>
-      //   <AllAdvens/>
-      // </View>
       <NavigatorIOS
         initialRoute ={ authRoute }
         style={{ flex: 1 }}
       />
-
     );
   }
 }
