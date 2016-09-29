@@ -7,20 +7,10 @@ import {
 } from 'react-native';
 
 // App components
-import TempAcceptView from './TempAcceptView'
 import MenuButton from '../nav/MenuButton';
 import MyAdventures from '../MyAdventures/myAdventuresContainer';
 
-const AdvenCard = (props) => {
-  console.log(props)
-
-  var routeAcceptView = {
-    name: "You accepted " + props.adven.title,
-    component: TempAcceptView,
-    passProps: {
-      adven: props.adven
-    }
-  }
+const AllAdventureDetail = (props) => {
 
   var advenAccept = function (){
     AsyncStorage.getItem('id_token')
@@ -73,4 +63,4 @@ var style = {
   }
 }
 
-export default AdvenCard
+export default AllAdventureDetail
